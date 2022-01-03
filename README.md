@@ -14,9 +14,10 @@ services:
       - /host_files:/files:ro # Read-only
       - /host_links:/links
 
-      - /etc/localtime:/etc/localtime:ro # Container uses date from host.
+      - /etc/localtime:/etc/localtime:ro # Container uses date and time from host.
     environment:
       - DELAY_MINUTES=60
+      # - TZ=Asia/Tokyo # Alternative to mounting /etc/localtime.
 ```
 
 ## Volumes _(permission required)_
