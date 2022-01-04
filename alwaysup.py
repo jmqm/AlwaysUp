@@ -79,4 +79,4 @@ while True:
     run()
 
     printf("", f"Sleeping for {DELAY} minutes.")
-    sleep(DELAY * 60)
+    sleep((5 if DELAY < 5 else DELAY) * 60)
