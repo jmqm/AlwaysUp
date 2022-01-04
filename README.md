@@ -1,6 +1,6 @@
 Keep files alive, using AnonFiles.com.
 
-## About this project.
+## About this project
 Using AnonFiles.com, files are uploaded and a corresponding text file is created with the link to the file. If a link goes down, the file is uploaded again and its text file's link is changed.
 
 ## docker-compose
@@ -9,7 +9,6 @@ services:
   alwaysup:
     image: jmqm/alwaysup:latest
     container_name: alwaysup
-    network_mode: none
     volumes:
       - /host_files:/files:ro # Read-only
       - /host_links:/links
@@ -21,11 +20,11 @@ services:
 ```
 
 ## Volumes _(permission required)_
-`/files` _(read)_- Files to upload. All files in this directory will be considered.
+`/files` _(read)_ - Files to upload. All files in this directory will be considered.
 
 `/links` _(write)_ - Where to store links to.
 
 ### Other info
-Thought to create this software because it seemed fun, and in no way do I support the distribution of illegal material. Do not abuse this software, or else ![](https://cdn.betterttv.net/emote/59ca6551b27c823d5b1fd872/1x).
+Thought to create this software because it seemed fun. In no way do I support the distribution of illegal material, this software was not made for that. Do not abuse this software, or else ![monkaS](https://cdn.betterttv.net/emote/59ca6551b27c823d5b1fd872/1x).
 
 This project is not associated with AnonFiles.com aside from using its services for file upload.
