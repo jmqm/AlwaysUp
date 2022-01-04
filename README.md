@@ -16,7 +16,7 @@ services:
 
       - /etc/localtime:/etc/localtime:ro # Container uses date and time from host.
     environment:
-      - DELAY_MINUTES=60
+      - DELAY_MINUTES=60 # Minimum 5 minutes.
       # - TZ=Asia/Tokyo # Alternative to mounting /etc/localtime.
 ```
 

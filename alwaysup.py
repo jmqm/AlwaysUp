@@ -5,6 +5,7 @@ from time import sleep
 from datetime import datetime
 
 DELAY = int(os.environ["DELAY_MINUTES"])
+DELAY = 5 if DELAY < 5 else DELAY
 API_URL = "https://api.anonfiles.com"
 
 # region Functions
@@ -79,4 +80,4 @@ while True:
     run()
 
     printf("", f"Sleeping for {DELAY} minutes.")
-    sleep((5 if DELAY < 5 else DELAY) * 60)
+    sleep(DELAY * 60)
