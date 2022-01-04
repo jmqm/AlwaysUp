@@ -1,6 +1,6 @@
 Keep files alive, using AnonFiles.com.
 
-## About this project.
+## About this project
 Using AnonFiles.com, files are uploaded and a corresponding text file is created with the link to the file. If a link goes down, the file is uploaded again and its text file's link is changed.
 
 ## docker-compose
