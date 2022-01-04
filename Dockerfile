@@ -10,13 +10,17 @@ ENV DELAY_MINUTES=60
 # Install requirements and remove the file afterwards.
 COPY requirements.txt .
 RUN yes | pip install -r requirements.txt
-RUN rm requirements.txt
 
 COPY . /app
+
+# Cleanup
+RUN rm requirements.txt
+RUN rm /app/requirements.txt
+
 WORKDIR /app
 
-# # Change user.
-# RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
-# USER appuser
+# Change user.
+RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
+USER appuser
 
 CMD ["python", "alwaysup.py"]
