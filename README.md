@@ -9,7 +9,6 @@ services:
   alwaysup:
     image: jmqm/alwaysup:latest
     container_name: alwaysup
-    network_mode: none
     volumes:
       - /host_files:/files:ro # Read-only
       - /host_links:/links
