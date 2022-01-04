@@ -1,5 +1,6 @@
 *.lnk
 .git
+.github
 .gitignore
 .dockerignore
 Dockerfile
