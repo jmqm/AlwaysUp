@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_PASSWORD }} # This action does not support tokens.
           repository: ${{ env.USERNAME }}/${{ env.REPOSITORY }}
           short-description: ${{ github.event.repository.description }}
-          readme-filepath: /README.md
+          readme-filepath: ./README.md
 
       - name: Build image and push to Docker hub
         uses: docker/build-push-action@v2.6.1
