@@ -19,9 +19,4 @@ RUN rm /app/requirements.txt
 
 WORKDIR /app
 
-# Change user.
-RUN addgroup -S app && adduser -S -G app app
-RUN chown -R app:app /app && \
-    chmod -R 777 /app
-
 CMD ["python", "alwaysup.py"]
