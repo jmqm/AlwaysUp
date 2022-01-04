@@ -21,11 +21,11 @@ services:
 ```
 
 ## Volumes _(permission required)_
-`/files` _(read)_- Files to upload. All files in this directory will be considered.
+`/files` _(read)_ - Files to upload. All files in this directory will be considered.
 
 `/links` _(write)_ - Where to store links to.
 
 ### Other info
-Thought to create this software because it seemed fun, and in no way do I support the distribution of illegal material. Do not abuse this software, or else ![](https://cdn.betterttv.net/emote/59ca6551b27c823d5b1fd872/1x).
+Thought to create this software because it seemed fun. In no way do I support the distribution of illegal material, this software was not made for that. Do not abuse this software, or else ![monkaS](https://cdn.betterttv.net/emote/59ca6551b27c823d5b1fd872/1x).
 
 This project is not associated with AnonFiles.com aside from using its services for file upload.
