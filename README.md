@@ -1,5 +1,5 @@
 ># Archived
-> AnonFiles.com has decided to shut down, this program is no longer working in it's current state (2023/09/22).
+> AnonFiles.com has decided to shut down, this program is no longer working in its current state (2023/09/22).
 
 Keep files alive, using AnonFiles.com.
 
